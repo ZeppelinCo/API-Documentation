@@ -1,10 +1,11 @@
-# Activity
 
-## Messages in this network. Corresponds to the "Activity" tab on the website.
+## Activity
 
 <pre class="terminal">
 GET https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/activity.json
 </pre>
+
+Return messages in particular network. Corresponds to the "Activity" tab on the website.
 
 ### Parameters
 
@@ -15,9 +16,9 @@ GET https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/activity.json
 <pre class="terminal">
 [
   {
-    "created_at":"2012-01-23 09:33:37",
+    "created_at":"2012-04-23 09:33:37",
     "id":31781,
-    "text":"@User1 this is just a sample message text",
+    "text":"@VladaPetrovi\u0107 signup process javi error na 2 koraku in ne gre naprej. Please popravi \u010dimprej.",
     "in_reply_to_status_id":null,
     "favorited":false,
     "type":1,
