@@ -18,7 +18,7 @@ Return messages in particular network. Corresponds to the "Activity" tab on the 
   {
     "created_at":"2012-04-23 09:33:37",
     "id":31781,
-    "text":"@VladaPetrovi\u0107 signup process javi error na 2 koraku in ne gre naprej. Please popravi \u010dimprej.",
+    "text":"@UserDemo This is just sample status message in network.",
     "in_reply_to_status_id":null,
     "favorited":false,
     "type":1,
