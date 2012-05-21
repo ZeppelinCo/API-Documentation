@@ -72,4 +72,35 @@ in the url fragment. It'll look like so:
 
 The access token allows you to make requests to the API on a behalf of a user.
 
-    GET https://YOUR_NETWORK.zepppelin.com/api/3/activity.json?access_token=...
+    GET https://YOUR_NETWORK.zepppelin.com/api/3/activity.json?access_token=ACCESS-TOKEN
+
+# API key based authentication
+
+Zepppelin supports an api key-based authentication mechanism. The api key is associated with specific account in specific network. This key should be passed as a request header with each request.
+
+## How can I get this key?
+You have to authenticate user throught /network/logins endpoint. Because all requests are through HTTPS user credentials are securely encrypted by the SSL channel.
+
+ * Request header **x-api-clientid** - The client ID you received from Zepppelin when you [registered](mailto:api@zepppelin.com).
+ * **email** - user username
+ * **password** - user password
+
+
+
+```
+curl https://api.zepppelin.com/api/3/network/logins.json \
+-H "x-api-clientid:REPLACE_WITH_CLIENT_ID" \
+-d email=REPLACE_WITH_USER_EMAIL \
+-d password=REPLACE_WITH_USER_PASSWORD
+```
+
+In response you will recieve array of networks user is asociated with.
+
+## Get user streams with API key
+You have to add **x-api-key** header to your request
+
+```
+curl https://api.zepppelin.com/api/3/user/streams.json \
+-H "x-api-key:REPLACE_WITH_API_KEY"
+```
+
