@@ -1,24 +1,23 @@
-
 ## List of groups
 
-<pre class="terminal">
-GET https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/group/all.json
-</pre>
+```
+GET https://api.zepppelin.com/api/3/group/all.json
+```
 
 ## Group detail
 
-<pre class="terminal">
-GET https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/group/:group_id.json
-</pre>
+```
+GET https://api.zepppelin.com/api/3/group/:group_id.json
+```
 
 ## Join group
 
-<pre class="terminal">
-POST https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/group/join/:group_id.json
-</pre>
+```
+POST https://api.zepppelin.com/api/3/group/join/:group_id.json
+```
 
 ## Leave group
 
-<pre class="terminal">
-DELETE https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/group/join/:group_id.json
-</pre>
+```
+DELETE https://api.zepppelin.com/api/3/group/join/:group_id.json
+```
