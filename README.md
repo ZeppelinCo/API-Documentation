@@ -2,7 +2,7 @@
 
 ## Schema
 
-API access is only over HTTPS. Base entry point is from `https://api.zepppelin.com/api/3` or from the `https://YOUR_NETWORK.zepppelin.com/api/3`
+API access is only over `HTTPS`. Base entry point is from `https://api.zepppelin.com/api/3` or from the `https://YOUR_NETWORK.zepppelin.com/api/3`
 domain. All data is sent and received as `JSON`.
 
 Times are expressed in GMT+0. All timestamps are returned in format.
