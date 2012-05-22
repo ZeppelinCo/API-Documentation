@@ -25,40 +25,8 @@ Before getting started you need to register your application by sending request 
 
 # Authentication
 Zepppelin supports two authentication mechanism
-* API key based authentication and
 * OAuth2
-
-# API key based authentication
-
-The api key is associated with specific account in specific network. This key should be passed as a request header with each request.
-
-## How can I get this key?
-You have to authenticate user throught `/network/logins.json` entry point. Because all requests are through `HTTPS` user credentials are securely encrypted by the `SSL` channel.
-
-#### Request headers
-* `x-api-clientid` - The client ID you received from Zepppelin when you [registered](mailto:api@zepppelin.com).
-
-#### Request parameters
-* `email` - user email
-* `password` - user password
-
-#### Example with `curl`
-```
-curl https://api.zepppelin.com/api/3/network/logins.json \
--H "x-api-clientid:REPLACE_WITH_CLIENT_ID" \
--d email=REPLACE_WITH_USER_EMAIL \
--d password=REPLACE_WITH_USER_PASSWORD
-```
-
-In response you will recieve list of networks that the user is a member of.
-
-#### Get user streams with API key
-You have to add **x-api-key** header to your request
-
-```
-curl https://api.zepppelin.com/api/3/user/streams.json \
--H "x-api-key:REPLACE_WITH_API_KEY"
-```
+* API key based authentication and
 
 # OAuth2
 
@@ -109,4 +77,36 @@ or
 ```
 curl https://api.zepppelin.com/api/3/activity.json \
 -H "x-api-key:REPLACE_WITH_ACCESS_TOKEN"
+```
+
+# API key based authentication
+
+The api key is associated with specific account in specific network. This key should be passed as a `HTTP` request header with each request.
+
+## How can I get this key?
+You have to authenticate user throught `/network/logins.json` entry point. Because all requests are through `HTTPS` user credentials are securely encrypted by the `SSL` channel.
+
+#### Request headers
+* `x-api-clientid` - The client ID you received from Zepppelin when you [registered](mailto:api@zepppelin.com).
+
+#### Request parameters
+* `email` - user email
+* `password` - user password
+
+#### Example with `curl`
+```
+curl https://api.zepppelin.com/api/3/network/logins.json \
+-H "x-api-clientid:REPLACE_WITH_CLIENT_ID" \
+-d email=REPLACE_WITH_USER_EMAIL \
+-d password=REPLACE_WITH_USER_PASSWORD
+```
+
+In response you will recieve list of networks that the user is a member of.
+
+#### Get user streams with API key
+To make a successful Zepppelin API request, you must include a valid api key in the request. This can be done by using the `HTTP` header **x-api-key**:
+
+```
+curl https://api.zepppelin.com/api/3/user/streams.json \
+-H "x-api-key:REPLACE_WITH_API_KEY"
 ```
