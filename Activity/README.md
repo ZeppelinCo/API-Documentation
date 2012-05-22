@@ -1,17 +1,17 @@
 ## Activity stream
 
-<pre class="terminal">
+```
 GET https://api.zepppelin.com/api/3/activity.json
-</pre>
+```
 
 Return messages in particular network. Corresponds to the "Activity" tab on the website.
 
-### Parameters
+#### Request parameters
 
-* flow\_id: _Optional_ - Flow id 
-* time: _Optional_ - UTC+0 timestamp. Returns messages till time.
+* `flow_id` _Optional_ - Flow id 
+* `time` _Optional_ - UTC+0 timestamp. Returns messages till time.
 
-### Response
+#### Response
 
 ``` json
 [
@@ -51,12 +51,12 @@ GET https://api.zepppelin.com/api/3/activity/user.json
 
 Return activity messages for user.
 
-### Parameters
+#### Request parameters
 
-* user\_id: _Optional_ - User id
-* time: _Optional_ - UTC+0 timestamp. Returns messages till time.
+* `user_id` _Optional_ - User id
+* `time` _Optional_ - UTC+0 timestamp. Returns messages till time.
 
-### Response
+#### Response
 
 ``` json
 [
@@ -115,12 +115,12 @@ GET https://api.zepppelin.com/api/3/activity/group.json
 
 Return activity messages for group.
 
-### Parameters
+#### Request parameters
 
-* group\_id: _Optional_ - Group id
-* time: _Optional_ - UTC+0 timestamp. Returns messages till time.
+* `group_id` _Optional_ - Group id
+* `time` _Optional_ - UTC+0 timestamp. Returns messages till time.
 
-### Response
+#### Response
 
 ``` json
 [
