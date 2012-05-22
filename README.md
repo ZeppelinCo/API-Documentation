@@ -103,5 +103,10 @@ https://your-redirect-uri#access_token=ACCESS-TOKEN
 The access token allows you to make requests to the API on a behalf of a user.
 
 ```
-GET https://api.zepppelin.com/api/3/activity.json?access_token=REPLACE_WITH_ACCESS_TOKEN
+curl https://api.zepppelin.com/api/3/activity.json?access_token=REPLACE_WITH_ACCESS_TOKEN
+```
+or
+```
+curl https://api.zepppelin.com/api/3/activity.json \
+-H "x-api-key:REPLACE_WITH_ACCESS_TOKEN"
 ```
