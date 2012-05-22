@@ -1,36 +1,35 @@
-
 ## List of users
 
-<pre class="terminal">
-GET https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/user/all.json
-</pre>
+```
+GET https://api.zepppelin.com/api/3/user/all.json
+```
 
 ## User detail
 
-<pre class="terminal">
-GET https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/user/:user_id.json
-</pre>
+```
+GET https://api.zepppelin.com/api/3/user/:user_id.json
+```
 
 ## Follow user
 
-<pre class="terminal">
-POST https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/user/follow/:user_id.json
-</pre>
+```
+POST https://api.zepppelin.com/api/3/user/follow/:user_id.json
+```
 
 ## Unfollow user
 
-<pre class="terminal">
-DELETE https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/user/follow/:user_id.json
-</pre>
+```
+DELETE https://api.zepppelin.com/api/3/user/follow/:user_id.json
+```
 
 ## Get list of streams user can access
 
-<pre class="terminal">
-GET https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/user/streams.json
-</pre>
+```
+GET https://api.zepppelin.com/api/3/user/streams.json
+```
 
 ## User detail for current user
 
-<pre class="terminal">
-GET https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/me.json
-</pre>
+```
+GET https://api.zepppelin.com/api/3/me.json
+```
