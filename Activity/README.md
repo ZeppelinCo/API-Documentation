@@ -1,8 +1,7 @@
-
 ## Activity stream
 
 <pre class="terminal">
-GET https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/activity.json
+GET https://api.zepppelin.com/api/3/activity.json
 </pre>
 
 Return messages in particular network. Corresponds to the "Activity" tab on the website.
@@ -14,7 +13,7 @@ Return messages in particular network. Corresponds to the "Activity" tab on the 
 
 ### Response
 
-<pre class="terminal">
+```
 [
   {
     "created_at":"2012-04-23 10:39:29",
@@ -42,12 +41,13 @@ Return messages in particular network. Corresponds to the "Activity" tab on the 
     }
   }
 ]
-</pre>
+```
+
 ## User activity stream
 
-<pre class="terminal">
-GET https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/activity/user.json
-</pre>
+```
+GET https://api.zepppelin.com/api/3/activity/user.json
+```
 
 Return activity messages for user.
 
@@ -58,7 +58,7 @@ Return activity messages for user.
 
 ### Response
 
-<pre class="terminal">
+```
 [
   {
     "created_at":"2012-04-20 09:06:54",
@@ -105,12 +105,13 @@ Return activity messages for user.
     }
   }
 ]
-</pre>
+```
+
 ## Group activity stream
 
-<pre class="terminal">
-GET https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/activity/group.json
-</pre>
+```
+GET https://api.zepppelin.com/api/3/activity/group.json
+```
 
 Return activity messages for group.
 
@@ -121,7 +122,7 @@ Return activity messages for group.
 
 ### Response
 
-<pre class="terminal">
+```
 [
   {
     "created_at":"2011-04-02 04:16:16",
@@ -149,4 +150,4 @@ Return activity messages for group.
     }
   }
 ]
-</pre>
+```
