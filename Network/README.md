@@ -8,14 +8,14 @@ User credentials are securely encrypted by the SSL channel.
 POST https://api.zepppelin.com/api/3/network/logins.json
 ```
 
-### Request headers
-* **x-api-clientid** - The client ID you received from Zepppelin when you [registered](mailto:api@zepppelin.com).
+#### Request headers
+* `x-api-clientid` - The client ID you received from Zepppelin when you [registered](mailto:api@zepppelin.com).
 
-### Request parameters
-* **email** - user email
-* **password** - user password
+#### Request parameters
+* `email` - user email
+* `password` - user password
 
-### Response
+#### Response
 
 ``` json
 [
