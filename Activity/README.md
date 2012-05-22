@@ -13,7 +13,7 @@ Return messages in particular network. Corresponds to the "Activity" tab on the 
 
 ### Response
 
-```
+``` json
 [
   {
     "created_at":"2012-04-23 10:39:29",
@@ -58,7 +58,7 @@ Return activity messages for user.
 
 ### Response
 
-```
+``` json
 [
   {
     "created_at":"2012-04-20 09:06:54",
@@ -122,7 +122,7 @@ Return activity messages for group.
 
 ### Response
 
-```
+``` json
 [
   {
     "created_at":"2011-04-02 04:16:16",
