@@ -1,60 +1,59 @@
-
 ## Get message detail
 
-<pre class="terminal">
-GET https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/message/:message_id.json
-</pre>
+```
+GET https://api.zepppelin.com/api/3/message/:message_id.json
+```
 
 ## Post new message
 
-<pre class="terminal">
-POST https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/message.json
-</pre>
+```
+POST https://api.zepppelin.com/api/3/message.json
+```
 
 ## Delete message
 
-<pre class="terminal">
-DELETE https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/message/:message_id.json
-</pre>
+```
+DELETE https://api.zepppelin.com/api/3/message/:message_id.json
+```
 
 ## Vote for Idea
 
-<pre class="terminal">
-POST https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/message/vote.json
-</pre>
+```
+POST https://api.zepppelin.com/api/3/message/vote.json
+```
 
 ## Set status of To Do item to done
 
-<pre class="terminal">
-POST https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/message/done.json
-</pre>
+```
+POST https://api.zepppelin.com/api/3/message/done.json
+```
 
 ## Set status of To Do item to normal
 
-<pre class="terminal">
-DELETE https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/message/done.json
-</pre>
+```
+DELETE https://api.zepppelin.com/api/3/message/done.json
+```
 
 ## Like message
 
-<pre class="terminal">
-POST https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/message/like.json
-</pre>
+```
+POST https://api.zepppelin.com/api/3/message/like.json
+```
 
 ## UnLike message
 
-<pre class="terminal">
-DELETE https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/message/like.json
-</pre>
+```
+DELETE https://api.zepppelin.com/api/3/message/like.json
+```
 
 ## Star message
 
-<pre class="terminal">
-POST https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/message/star.json
-</pre>
+```
+POST https://api.zepppelin.com/api/3/message/star.json
+```
 
 ## UnStar message
 
-<pre class="terminal">
-DELETE https://{YOUR_NETWORK_URL}.zepppelin.com/api/3/message/star.json
-</pre>
+```
+DELETE https://api.zepppelin.com/api/3/message/star.json
+```
