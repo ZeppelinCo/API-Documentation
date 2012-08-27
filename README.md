@@ -104,7 +104,7 @@ curl https://api.zepppelin.com/api/3/network/logins.json \
 In response you will recieve list of networks that the user is a member of.
 
 #### Get user streams with API key
-To make a successful Zepppelin API request, you must include a valid api key in the request. This can be done by using the `HTTP` header **x-api-key**:
+To make a successful Zepppelin API request, you must include a valid api key in the request. This can be done by using the `HTTP` header **x-api-key**
 
 ```
 curl https://api.zepppelin.com/api/3/user/streams.json \
